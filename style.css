@@ -1,0 +1,133 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 30px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-top: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(2) {
+  color: red;
+} */
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* The p will actually need to be a first child for the style to apply, 
+it just wont apply to the first <p> in <article>*/
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: dodgerblue;
+  font-weight: bold;
+  text-decoration: underline dotted navy;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* Always maintain this order --> link, visited,hover,active(LVHA) */
+
+/* RESOLVING SELECTOR CONFLICT */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: yellow;
+}
+
+.text {
+  color: rgb(98, 0, 255);
+}
+
+footer p {
+  color: green;
+}
+
+nav {
+  font-size: 18px;
+}
